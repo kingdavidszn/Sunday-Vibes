@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Vibes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Sunday</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" aria-current="page" style="color: #ff6b6b;">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Sunday</h1>
+                    <p>Your day of peace and possibilities</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="feature-icon">🌅</span>
+                            <span>Peaceful Mornings</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">☕</span>
+                            <span>Lazy Afternoons</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌙</span>
+                            <span>Cozy Evenings</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="canvas-container"></div>
+            </section>
+
+            <section class="sunday-quotes">
+                <h2>Sunday Quotes</h2>
+                <div class="quotes-grid">
+                    <div class="quote-card">“Sundays are for self-care and reflection.”<span class="quote-author">– Unknown</span></div>
+                    <div class="quote-card">“Do not let Sunday be taken from you. If your soul has no Sunday, it becomes an orphan.”<span class="quote-author">– Albert Schweitzer</span></div>
+                    <div class="quote-card">“There is always something new to learn and feel each Sunday.”<span class="quote-author">– Bishop Gerald Causse</span></div>
+                    <div class="quote-card">“On Sundays, the world is as bright and empty as a balloon.”<span class="quote-author">– Joseph Roth</span></div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>Why Sunday?</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="card-icon">🛋️</div>
+                        <h3>Rest & Relaxation</h3>
+                        <p>A day to recharge and prepare for the week ahead. Take time to unwind, meditate, and find your inner peace.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family Time</h3>
+                        <p>Perfect for creating lasting memories with loved ones. Share meals, play games, and strengthen your bonds.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">✨</div>
+                        <h3>New Beginnings</h3>
+                        <p>Start fresh and set intentions for the week. Plan your goals and embrace new opportunities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="activities" class="activities">
+                <h2>Sunday Activities</h2>
+                
+                <!-- Image Carousel -->
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <!-- Slides will be added dynamically via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <div class="activity-icon">☕</div>
+                        <h3>Morning Coffee</h3>
+                        <p>Start your day with a peaceful cup of coffee. Take time to enjoy the aroma and the quiet moments.</p>
+                        <div class="activity-tips">
+                            <span>Best Time: 7-9 AM</span>
+                            <span>Perfect with: Fresh pastries</span>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">📚</div>
+                        <h3>Reading</h3>
+                        <p>Dive into that book you've been meaning to read. Create a cozy reading nook and get lost in stories.</p>
+                        <div class="activity-tips">
+                            <span>Duration: 1-2 hours</span>
+                            <span>Perfect with: Tea</span>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🌳</div>
+                        <h3>Nature Walk</h3>
+                        <p>Connect with nature and clear your mind. Explore local parks or trails and breathe in fresh air.</p>
+                        <div class="activity-tips">
+                            <span>Best Time: 10 AM - 4 PM</span>
+                            <span>Perfect with: Camera</span>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">🎨</div>
+                        <h3>Creative Time</h3>
+                        <p>Express yourself through art and creativity. Paint, draw, or craft something beautiful.</p>
+                        <div class="activity-tips">
+                            <span>Duration: Flexible</span>
+                            <span>Perfect with: Music</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Share Your Sunday Story</h2>
+                <p class="contact-intro">Tell us about your perfect Sunday routine or share your favorite Sunday memories. We'd love to hear how you make your Sundays special!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Tell us about your perfect Sunday..." required></textarea>
+                    <button type="submit">Share Your Story</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-message">
+                    <h3>Celebrating Sundays</h3>
+                    <p>Join our community of Sunday enthusiasts who believe in making the most of their day of rest and reflection.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 Sunday Vibes. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
